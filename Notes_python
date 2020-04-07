@@ -1,0 +1,8 @@
+# This file summarize informations and thoughts about python and the hackerRank challenges.
+
+# 07.04.2020
+# While working on commandline challenges, I've found "Regular expression" that coul be usefull for my python challenges. 
+# I have to search how they work on python !
+# For example :
+# “[a-z]” matches all the lowercase letters. “[a-zA-Z]” matches all of the letters. “[a-zA-Z0-9]” matches alphanumeric 
+# characters. Inside of the brackets, the “^” character negates anything. “[^a-zA-Z]” matches anything that’s not a letter.
