@@ -18,34 +18,25 @@ def decimal_to_hexadecimal(dec):
     decimal = int(dec)
     hexa_num = str(hex(decimal))
     # return a capitalize string without the useless first characters
-    return hexa_num[2:].capitalize()
-    
+    return hexa_num[2:].swapcase()
 
+# Given an integer n, print the following values for each integer from 1 to n :
+# 1. Decimal
+# 2. Octal
+# 3. Hexadecimal
+# 4. Binary
 def print_formatted(number):
     
-    num = 1
     # Width of number in binary
     width = len(decimal_to_binary(number))
-    your_list = []
-
-    # Iterate for each number
-    while (num <= number):
-        #add numbers
-        your_list.append(num)
-        your_list.append(decimal_to_octal(num))
-        your_list.append(decimal_to_hexadecimal(num))
-        your_list.append(decimal_to_binary(num))
-
-        #print
-        for element in your_list:
-            print(str(element).rjust(width)+" ", end="")
-
-        your_list = []
-        num+=1
-        print("")
+    
+    for i in range(number):
+        num = i+1
+        print(str(num).rjust(width)+" "+decimal_to_octal(num).rjust(width)+" "+decimal_to_hexadecimal(num).rjust(width)+" "+decimal_to_binary(num).rjust(width))
 
     
 
 
 if __name__ == '__main__':
-	print_formatted(99)
+    n = int(input())
+    print_formatted(n)
