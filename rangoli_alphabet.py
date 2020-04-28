@@ -9,6 +9,9 @@
 # ------e-d-e------
 # --------e--------
 
+# Code below has been written before having heard of center() and join() functions, at the beginning of my python studies
+# So it's not efficient.
+# Read a better code below this one
 def print_rangoli(size):
     # your code goes here
     # the alphabet
